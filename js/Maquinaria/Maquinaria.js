@@ -57,7 +57,9 @@ $(document).ready(function(){
             icon: 'success',
             title: 'Máquina agendada',
             text: 'La máquina se agendo con éxito',
-          })
+
+        });
+        document.FrmMaquinaria.submit();
         }
         else
         {
@@ -65,11 +67,11 @@ $(document).ready(function(){
                 icon: 'error',
                 title: 'Faltan campos por rellenar',
                 text: 'Los asteriscos (*) le indican que falta por rellenar',
-              })
+            })
         }
     });
-    
-}); 
+
+});
 
 $(document).ready(function(){
     $("#FrmMaquinaria").submit(function( event )
